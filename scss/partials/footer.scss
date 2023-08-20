@@ -1,0 +1,13 @@
+footer {
+  padding: 1.5rem;
+
+  p {
+    @include font-style(500, $color: $text-color-4);
+    font-size: 0.875rem;
+    text-align: center;
+
+    span {
+      font-weight: 700;
+    }
+  }
+}

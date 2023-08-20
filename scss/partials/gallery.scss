@@ -1,0 +1,46 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+
+  gap: 3vw;
+
+  @include media-query-min-width-1439 {
+    gap: 2rem;
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 3.4vw;
+    box-shadow: -2px 8px 12px 0px rgba(0, 0, 0, 0.14);
+    -webkit-box-shadow: -2px 8px 12px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: -2px 8px 12px 0px rgba(0, 0, 0, 0.14);
+
+    @include media-query-min-width-1023 {
+      border-radius: 0.8rem;
+    }
+  }
+
+  &__image.one {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  &__image.two {
+    grid-area: 1 / 2 / 2 / 4;
+  }
+
+  &__image.three {
+    grid-area: 2 / 1 / 3 / 3;
+  }
+
+  &__image.four {
+    grid-area: 2 / 3 / 5 / 4;
+  }
+  &__image.five {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  &__image.six {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+}

@@ -1,0 +1,94 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__picture {
+    width: 100%;
+    max-width: 7.84681rem;
+    border-radius: 1.8rem;
+    padding: 0.62rem;
+
+    @include media-query-min-width-1023 {
+      max-width: 11.5625rem;
+    }
+  }
+
+  &__name {
+    @include font-style;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-bottom: 0.25rem;
+
+    @include media-query-min-width-1023 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__location {
+    @include font-style(600, $text-color-2);
+    text-align: center;
+    font-size: 0.625rem;
+    margin-bottom: 0.75rem;
+
+    @include media-query-min-width-1023 {
+      font-size: 0.875rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &__stats {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9vw;
+
+    @include media-query-min-width-1023 {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__stat {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 4.875rem;
+    padding: 0.73rem 0;
+    border-radius: 0.75rem;
+    background-color: $background-color;
+
+    @include media-query-min-width-1023 {
+      width: 6.25rem;
+    }
+
+    &:not(:nth-child(1)) {
+      margin-left: 0.75rem;
+
+      @include media-query-min-width-1023 {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+
+  &__stat-value {
+    @include font-style;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-bottom: 0.1rem;
+
+    @include media-query-min-width-1023 {
+      font-size: 1.125rem;
+    }
+  }
+
+  &__stat-label {
+    @include font-style(600, $text-color-3);
+    text-align: center;
+    font-size: 0.75rem;
+
+    @include media-query-min-width-1023 {
+      font-size: 0.875rem;
+    }
+  }
+}

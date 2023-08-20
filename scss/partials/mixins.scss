@@ -1,0 +1,19 @@
+@mixin font-style($font-weight: 600, $color: #4e5150) {
+  font-style: normal;
+  font-weight: $font-weight;
+  line-height: normal;
+  font-family: $font-family-montserrat;
+  color: $color;
+}
+
+@mixin media-query-min-width-1023 {
+  @media (min-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin media-query-min-width-1439 {
+  @media (min-width: 1439px) {
+    @content;
+  }
+}

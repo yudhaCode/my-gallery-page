@@ -1,0 +1,9 @@
+.container {
+  padding: 4.696vw 3.2vw;
+
+  @include media-query-min-width-1439 {
+    padding: 2.56rem 14.88rem;
+    margin: 0 auto;
+    max-width: 1440px;
+  }
+}
